@@ -1,0 +1,13 @@
+[INFO ] 2021-11-01 21:50:59.718 [] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-11-01 21:50:59.719 [] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 2021-11-01 21:51:00.124 [] RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2021-11-01 21:51:00.133 [] RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[INFO ] 2021-11-01 21:51:00.455 [] TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 2021-11-01 21:51:00.518 [] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 799 ms
+[INFO ] 2021-11-01 21:51:01.380 [] LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2021-11-01 21:51:01.413 [] JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2021-11-01 21:51:01.607 [] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-11-01 21:51:01.631 [] TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 2021-11-01 21:51:23.656 [] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-11-01 21:51:23.657 [] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-11-01 21:51:45.386 [] LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'

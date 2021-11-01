@@ -1,0 +1,9 @@
+[INFO ] 2021-11-01 21:50:59.666 [] TestexcelApplication - Starting TestexcelApplication using Java 1.8.0_302 on HungBeo with PID 10176 (D:\java code\testexcel\target\classes started by Admin in D:\java code\testexcel)
+[INFO ] 2021-11-01 21:50:59.671 [] TestexcelApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2021-11-01 21:51:01.638 [] TestexcelApplication - Started TestexcelApplication in 2.198 seconds (JVM running for 3.016)
+[INFO ] 2021-11-01 21:51:23.710 [8c88ef74-7893-41a2-ad01-57cb3ff994d6] SendDataToServer - Token of request 8c88ef74-7893-41a2-ad01-57cb3ff994d6
+[INFO ] 2021-11-01 21:51:23.710 [8c88ef74-7893-41a2-ad01-57cb3ff994d6] SendDataToServer - Begin call api
+[INFO ] 2021-11-01 21:51:23.909 [] SendDataToServer - Begin to server: Message(id=null, messageId=bf1363e8-1486-4fe4-ad3b-d18ca7279326, keyword=PHONGVU , sender=Phongvu.vn, destination=o84932916468, shortMessage=test dich vu, encryptMessage=, isEncrypt=0, type=0, requestTime=0, partnerCode=950003, sercretKey=5c6b322e-5d49-4ac3-9fab-1f2d9f3322d1) and url: https://smsgw.vnpaytest.vn/smsgw/sendSms
+[INFO ] 2021-11-01 21:51:24.349 [] SendDataToServer - Begin to server: Message(id=null, messageId=cbf2e1b6-af23-4b98-a24c-ddc0d82a6936, keyword=PHONGVU 2, sender=Phongvu2.vn, destination=o84932916468, shortMessage=test dich vu, encryptMessage=, isEncrypt=0, type=0, requestTime=0, partnerCode=950003, sercretKey=5c6b322e-5d49-4ac3-9fab-1f2d9f3322d1) and url: https://smsgw.vnpaytest.vn/smsgw/sendSms
+[INFO ] 2021-11-01 21:51:24.376 [8c88ef74-7893-41a2-ad01-57cb3ff994d6] ServiceMessage - Response [MessageResponse{messageId='bf1363e8-1486-4fe4-ad3b-d18ca7279326', status='86', description='INVALID_KEYWORD', isMnp='0'}, MessageResponse{messageId='cbf2e1b6-af23-4b98-a24c-ddc0d82a6936', status='86', description='INVALID_KEYWORD', isMnp='0'}]
+[INFO ] 2021-11-01 21:51:24.376 [8c88ef74-7893-41a2-ad01-57cb3ff994d6] SendDataToServer - End call api
