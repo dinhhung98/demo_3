@@ -19,7 +19,7 @@ import java.util.List;
 
 public class ReadExcel {
     private static Logger logger = LogManager.getLogger(SendDataToServer.class);
-    public static List<Message> readData() throws IOException {
+    public synchronized static List<Message> readData() throws IOException {
         List<Message> messages = new ArrayList<>();
         try {
             Files.move(Paths.get("Sent/demo.xlsx"),Paths.get("Processing/demo.xlsx"), StandardCopyOption.REPLACE_EXISTING);
@@ -45,10 +45,8 @@ public class ReadExcel {
             return messages;
         } catch (FileNotFoundException e) {
             logger.error("Can't found file",e);
-            e.printStackTrace();
         } catch (IOException e) {
             logger.error("Read data from file",e);
-            e.printStackTrace();
         }
         return messages;
     }

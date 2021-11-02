@@ -1,4 +1,4 @@
-package com.vnpay.config;
+package com.vnpay.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

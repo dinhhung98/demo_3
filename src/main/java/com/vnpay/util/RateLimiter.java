@@ -1,4 +1,4 @@
-package com.vnpay.config;
+package com.vnpay.util;
 
 public abstract class RateLimiter {
 

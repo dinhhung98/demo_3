@@ -1,8 +1,7 @@
 package com.vnpay.controller;
 
-import com.vnpay.config.LeakyBucket;
-import com.vnpay.config.RateLimiter;
-import com.vnpay.constance.RateConfig;
+import com.vnpay.config.ConfigPool;
+import com.vnpay.util.RateLimiter;
 import com.vnpay.model.MessageResponse;
 import com.vnpay.service.impl.ServiceMessage;
 import com.vnpay.util.SendDataToServer;
@@ -24,7 +23,7 @@ public class SMSController {
 
     private static Logger logger = LogManager.getLogger(SendDataToServer.class);
 
-    private static RateLimiter rateLimiter = new LeakyBucket(RateConfig.MAX_REQUEST_PER_SECOND);
+    private static RateLimiter rateLimiter = ConfigPool.rateLimiter;
 
     @PostMapping
     public @ResponseBody List<MessageResponse> getSMSMessage(){
