@@ -31,13 +31,7 @@ public class SMSController {
         ThreadContext.put("token",token);
         logger.info("Token of request {}",token);
         try {
-            String result = null;
-            if (rateLimiter.checkAllowRequest()){
-                logger.info("Begin call api");
-                result = serviceMessage.getData();
-                logger.info("End call api");
-            }
-            return result;
+            return serviceMessage.getData();
         }catch (Exception e){
             logger.error("Internal server error:",e);
             e.printStackTrace();
