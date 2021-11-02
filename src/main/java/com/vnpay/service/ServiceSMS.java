@@ -1,10 +1,8 @@
 package com.vnpay.service;
 
-import com.vnpay.model.MessageResponse;
-
-import java.util.List;
+import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 public interface ServiceSMS {
-    public List<MessageResponse> getData() throws ExecutionException, InterruptedException;
+    public String getData() throws ExecutionException, InterruptedException, IOException;
 }

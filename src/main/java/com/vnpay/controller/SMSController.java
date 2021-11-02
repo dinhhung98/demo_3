@@ -26,12 +26,12 @@ public class SMSController {
     private static RateLimiter rateLimiter = ConfigPool.rateLimiter;
 
     @PostMapping
-    public @ResponseBody List<MessageResponse> getSMSMessage(){
+    public @ResponseBody String getSMSMessage(){
         String token = UUID.randomUUID().toString();
         ThreadContext.put("token",token);
         logger.info("Token of request {}",token);
         try {
-            List<MessageResponse> result = null;
+            String result = null;
             if (rateLimiter.checkAllowRequest()){
                 logger.info("Begin call api");
                 result = serviceMessage.getData();
